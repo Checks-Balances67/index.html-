@@ -1,0 +1,19 @@
+css
+/* Base styles redesigmed to prevent horizontal scrolling and overlapping */
+*{
+  box-sizing: border-box;
+  margin: O;
+  padding: O;
+}
+
+body {
+  font-family: sans-serif
+  width: 100%;
+  overflow-x hidden; /* Safety feature against horizontal scrolling */
+  background-color: #f4f4f9;
+}
+header, footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
