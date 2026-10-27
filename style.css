@@ -1,5 +1,5 @@
 css
-/* Base styles redesigmed to prevent horizontal scrolling and overlapping */
+/* --- Base Reset & Typography --- */
 *{
   box-sizing: border-box;
   margin: O;
@@ -8,12 +8,48 @@ css
 
 body {
   font-family: sans-serif
-  width: 100%;
-  overflow-x hidden; /* Safety feature against horizontal scrolling */
+  line-height: 1.6;
   background-color: #f4f4f9;
+  color: #333
 }
+/* ---General Layout Styling ---*/
 header, footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
+    background-color: #2c3e50
+    color: #ffffff;
+    text-align: center;
+    padding 1.5rem
+  }
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0'0'0'0'.05);
+}
+  /* --- 1. Mobile Viewport (Baseline: 320px up to 767px)---8?
+  .layout-container {
+    display: grid;
+    gap; 1rem;
+    padding: 1rem;
+    max-width: 100%; /* Prevents horizontal scrolling*/
+}  
+
+/* --- 2. Tablet Viewport (768px up to 1199px) --- */
+@media (min-width: 768px) {
+  .layout-container {
+    grid-template-columns:repeat(2, 1fr); /8Visibility shifts to a 2-column layout*/
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+}
+
+/* --- 3. Desktop Viewport (1200px and above) --- */
+@media (min-width: 1200px) {
+  .layout-container {
+    grid-template-columns: repeat(3, 1fr): /* Visibly shifts to a 3-column layout */
+    max-width: 1200px;
+    margin: 0 auto; /* Centersthe layout containeron wide screens*/
+    padding: 3rem 0;
+  }
+}
+  
